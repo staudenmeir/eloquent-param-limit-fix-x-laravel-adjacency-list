@@ -1,0 +1,33 @@
+{
+    "name": "staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list",
+    "description": "Merge of staudenmeir/eloquent-param-limit-fix and staudenmeir/laravel-adjacency-list",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonas Staudenmeir",
+            "email": "mail@jonas-staudenmeir.de"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "illuminate/database": "^9.0",
+        "staudenmeir/eloquent-param-limit-fix": "^v1.1.1",
+        "staudenmeir/laravel-adjacency-list": "^v1.10.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Staudenmeir\\EloquentParamLimitFixXLaravelAdjacencyList\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Staudenmeir\\EloquentParamLimitFix\\Tests\\": "tests/EloquentParamLimitFix",
+            "Staudenmeir\\LaravelAdjacencyList\\Tests\\": "tests/LaravelAdjacencyList"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
