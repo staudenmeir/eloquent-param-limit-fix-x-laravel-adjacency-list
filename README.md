@@ -23,12 +23,25 @@ Use this command if you are in PowerShell on Windows (e.g. in VS Code):
 
 ## Usage
 
+### Tree Relationships
+
 Use the `HasParamLimitFixAndRecursiveRelationships` trait in your model:
 
 ```php
 class User extends Model
 {
     use \Staudenmeir\EloquentParamLimitFixXLaravelAdjacencyList\Eloquent\HasParamLimitFixAndRecursiveRelationships;
+}
+```
+
+### Graph Relationships
+
+Use the `HasParamLimitFixAndGraphRelationships` trait in your model:
+
+```php
+class Node extends Model
+{
+    use \Staudenmeir\EloquentParamLimitFixXLaravelAdjacencyList\Eloquent\HasParamLimitFixAndGraphRelationships;
 }
 ```
 
