@@ -87,7 +87,7 @@ class DescendantsTest extends TestCase
 
     public function testExistenceQuery()
     {
-        if (in_array($this->database, ['mariadb', 'sqlsrv'])) {
+        if (in_array($this->connection, ['mariadb', 'sqlsrv'])) {
             $this->markTestSkipped();
         }
 
@@ -98,7 +98,7 @@ class DescendantsTest extends TestCase
 
     public function testExistenceQueryAndSelf()
     {
-        if (in_array($this->database, ['mariadb', 'sqlsrv'])) {
+        if (in_array($this->connection, ['mariadb', 'sqlsrv'])) {
             $this->markTestSkipped();
         }
 
@@ -109,7 +109,7 @@ class DescendantsTest extends TestCase
 
     public function testExistenceQueryForSelfRelation()
     {
-        if (in_array($this->database, ['mariadb', 'sqlsrv'])) {
+        if (in_array($this->connection, ['mariadb', 'sqlsrv'])) {
             $this->markTestSkipped();
         }
 
@@ -120,7 +120,7 @@ class DescendantsTest extends TestCase
 
     public function testExistenceQueryForSelfRelationAndSelf()
     {
-        if (in_array($this->database, ['mariadb', 'sqlsrv'])) {
+        if (in_array($this->connection, ['mariadb', 'sqlsrv'])) {
             $this->markTestSkipped();
         }
 
@@ -131,7 +131,7 @@ class DescendantsTest extends TestCase
 
     public function testWithSumForSelfRelation()
     {
-        if (in_array($this->database, ['mariadb', 'sqlsrv'])) {
+        if (in_array($this->connection, ['mariadb', 'sqlsrv'])) {
             $this->markTestSkipped();
         }
 
@@ -142,7 +142,7 @@ class DescendantsTest extends TestCase
 
     public function testWithSumForSelfRelationAndSelf()
     {
-        if (in_array($this->database, ['mariadb', 'sqlsrv'])) {
+        if (in_array($this->connection, ['mariadb', 'sqlsrv'])) {
             $this->markTestSkipped();
         }
 
@@ -153,7 +153,7 @@ class DescendantsTest extends TestCase
 
     public function testDelete()
     {
-        if ($this->database === 'mariadb') {
+        if ($this->connection === 'mariadb') {
             $this->markTestSkipped();
         }
 
@@ -166,7 +166,7 @@ class DescendantsTest extends TestCase
 
     public function testForceDelete()
     {
-        if ($this->database === 'mariadb') {
+        if ($this->connection === 'mariadb') {
             $this->markTestSkipped();
         }
 

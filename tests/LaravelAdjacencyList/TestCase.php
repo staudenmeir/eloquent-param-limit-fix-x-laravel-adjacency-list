@@ -16,18 +16,18 @@ use Staudenmeir\LaravelAdjacencyList\Tests\Models\Video;
 
 abstract class TestCase extends Base
 {
-    protected $database;
+    protected string $connection;
 
     protected function setUp(): void
     {
         parent::setUp();
 
-        $this->database = getenv('DATABASE') ?: 'sqlite';
+        $this->connection = getenv('DB_CONNECTION') ?: 'sqlite';
 
         $config = require __DIR__.'/../config/database.php';
 
         $db = new DB();
-        $db->addConnection($config[$this->database]);
+        $db->addConnection($config[$this->connection]);
         $db->setAsGlobal();
         $db->bootEloquent();
 
