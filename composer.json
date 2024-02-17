@@ -9,14 +9,14 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "illuminate/database": "^10.0",
+        "php": "^8.2",
+        "illuminate/database": "^11.0",
         "staudenmeir/eloquent-param-limit-fix": "^v1.1.1",
-        "staudenmeir/laravel-adjacency-list": "^1.13.1"
+        "staudenmeir/laravel-adjacency-list": "^1.20"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",
-        "phpunit/phpunit": "^10.1"
+        "phpunit/phpunit": "^10.5"
     },
     "autoload": {
         "psr-4": {
