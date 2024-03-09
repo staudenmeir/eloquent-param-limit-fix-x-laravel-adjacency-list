@@ -12,7 +12,7 @@
         "php": "^8.2",
         "illuminate/database": "^11.0",
         "staudenmeir/eloquent-param-limit-fix": "^v1.1.1",
-        "staudenmeir/laravel-adjacency-list": "^1.20"
+        "staudenmeir/laravel-adjacency-list": "^1.21"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",
