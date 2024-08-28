@@ -13,6 +13,6 @@ class ParamLimitFixTest extends TestCase
 
         $this->assertEquals([1], $users[0]->posts->pluck('id')->all());
         $this->assertEquals([2], $users[999]->posts->pluck('id')->all());
-        $this->assertCount(3, DB::getQueryLog());
+        $this->assertCount(3, DB::connection()->getQueryLog());
     }
 }

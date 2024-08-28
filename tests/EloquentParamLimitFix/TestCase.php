@@ -28,7 +28,7 @@ abstract class TestCase extends Base
 
         $this->seed();
 
-        DB::enableQueryLog();
+        DB::connection()->enableQueryLog();
     }
 
     /**

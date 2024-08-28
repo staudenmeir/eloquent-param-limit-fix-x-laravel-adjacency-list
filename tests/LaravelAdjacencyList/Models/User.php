@@ -5,6 +5,9 @@ namespace Staudenmeir\LaravelAdjacencyList\Tests\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Staudenmeir\EloquentParamLimitFixXLaravelAdjacencyList\Eloquent\HasParamLimitFixAndRecursiveRelationships;
+use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\BelongsToManyOfDescendants;
+use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\HasManyOfDescendants;
+use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\MorphToManyOfDescendants;
 
 class User extends Model
 {
@@ -13,7 +16,7 @@ class User extends Model
     }
     use SoftDeletes;
 
-    public function getCustomPaths()
+    public function getCustomPaths(): array
     {
         return array_merge(
             $this->parentGetCustomPaths(),
@@ -27,42 +30,42 @@ class User extends Model
         );
     }
 
-    public function posts()
+    public function posts(): HasManyOfDescendants
     {
         return $this->hasManyOfDescendants(Post::class);
     }
 
-    public function postsAndSelf()
+    public function postsAndSelf(): HasManyOfDescendants
     {
         return $this->hasManyOfDescendantsAndSelf(Post::class);
     }
 
-    public function roles()
+    public function roles(): BelongsToManyOfDescendants
     {
         return $this->belongsToManyOfDescendants(Role::class);
     }
 
-    public function rolesAndSelf()
+    public function rolesAndSelf(): BelongsToManyOfDescendants
     {
         return $this->belongsToManyOfDescendantsAndSelf(Role::class);
     }
 
-    public function tags()
+    public function tags(): MorphToManyOfDescendants
     {
         return $this->morphToManyOfDescendants(Tag::class, 'taggable');
     }
 
-    public function tagsAndSelf()
+    public function tagsAndSelf(): MorphToManyOfDescendants
     {
         return $this->morphToManyOfDescendantsAndSelf(Tag::class, 'taggable');
     }
 
-    public function videos()
+    public function videos(): MorphToManyOfDescendants
     {
         return $this->morphedByManyOfDescendants(Video::class, 'authorable');
     }
 
-    public function videosAndSelf()
+    public function videosAndSelf(): MorphToManyOfDescendants
     {
         return $this->morphedByManyOfDescendantsAndSelf(Video::class, 'authorable');
     }
