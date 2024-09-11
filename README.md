@@ -1,6 +1,6 @@
 # Eloquent Param Limit Fix + Laravel Adjacency List
 
-[![CI](https://github.com/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/actions/workflows/ci.yml/badge.svg)](https://github.com/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/actions/workflows/ci.yml)
+[![CI](https://github.com/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/actions/workflows/ci.yml/badge.svg)](https://github.com/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/actions/workflows/ci.yml?query=branch%3Amain)
 [![Code Coverage](https://codecov.io/gh/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/graph/badge.svg?token=LMK5FKOMBU)](https://codecov.io/gh/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list)
 [![Latest Stable Version](https://poser.pugx.org/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/v/stable)](https://packagist.org/packages/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list)
 [![Total Downloads](https://poser.pugx.org/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/downloads)](https://packagist.org/packages/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/stats)
