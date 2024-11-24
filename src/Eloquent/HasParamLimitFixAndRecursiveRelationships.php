@@ -4,6 +4,9 @@ namespace Staudenmeir\EloquentParamLimitFixXLaravelAdjacencyList\Eloquent;
 
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
+/**
+ * @phpstan-ignore trait.unused
+ */
 trait HasParamLimitFixAndRecursiveRelationships
 {
     use HasRecursiveRelationships;
