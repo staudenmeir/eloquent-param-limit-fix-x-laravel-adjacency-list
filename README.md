@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/actions/workflows/ci.yml/badge.svg)](https://github.com/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/actions/workflows/ci.yml?query=branch%3Amain)
 [![Code Coverage](https://codecov.io/gh/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/graph/badge.svg?token=LMK5FKOMBU)](https://codecov.io/gh/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list)
-[![PHPStan](https://img.shields.io/badge/PHPStan-level%209-brightgreen.svg?style=flat)](https://github.com/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/actions/workflows/static-analysis.yml?query=branch%3Amain)
+[![PHPStan](https://img.shields.io/badge/PHPStan-level%2010-brightgreen.svg?style=flat)](https://github.com/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/actions/workflows/static-analysis.yml?query=branch%3Amain)
 [![Latest Stable Version](https://poser.pugx.org/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/v/stable)](https://packagist.org/packages/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list)
 [![Total Downloads](https://poser.pugx.org/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/downloads)](https://packagist.org/packages/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/stats)
 [![License](https://poser.pugx.org/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/license)](https://github.com/staudenmeir/eloquent-param-limit-fix-x-laravel-adjacency-list/blob/main/LICENSE)
