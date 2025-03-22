@@ -2,17 +2,15 @@
 
 namespace Staudenmeir\EloquentParamLimitFixXLaravelAdjacencyList\Eloquent;
 
-use Illuminate\Database\Eloquent\Builder as Base;
 use Staudenmeir\EloquentParamLimitFix\Traits\BuildsParamLimitFixQueries;
-use Staudenmeir\LaravelAdjacencyList\Eloquent\Traits\BuildsAdjacencyListQueries;
+use Staudenmeir\LaravelAdjacencyList\Eloquent\Builder as Base;
 
 /**
  * @template TModel of \Illuminate\Database\Eloquent\Model
  *
- * @extends \Illuminate\Database\Eloquent\Builder<TModel>
+ * @extends \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder<TModel>
  */
 class Builder extends Base
 {
-    use BuildsAdjacencyListQueries;
     use BuildsParamLimitFixQueries;
 }
